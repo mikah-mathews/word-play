@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <script src="./js/jquery-3.4.1.js "></script>
     <script src="./js/scripts.js"></script>
   </head>
   <body>
-
+    <div class="container">
+      <form id="sentenceInput">
+        <label for="sentence">Enter in a sentence to be scrambled.</label>
+        <input id="sentence" class="form-control" onfocus="this.value=''" type="text">
+        <button type="submit" class=btn id="submit-sentence" >Scramble the Sentence</button>
+      </form>
+      <div id="output">
+        
+      </div>
+    </div>
   </body>
 </html>
